@@ -1,25 +1,9 @@
-.Result {
-  width: 100vw;
-  background-color: var(--white);
+.photo_profile{
+  width: '280px';
+  height: '280px'
 }
 
-.Group {
+.results_container{
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin: 0px 100px 0px 100px;
-}
-
-.Github-Search_Result {
-    font-family: Monaco;
-    font-size: 40px;
-    font-weight: 300;
-    font-stretch: normal;
-    color: #000000;
-}
-
-.text-Search_Result{
-  font-family: Raleway;
-  font-weight: 50;
-  font-style: italic;
+  
 }

@@ -10,7 +10,8 @@ class PaginaInicial extends Component {
     super(props);
     this.state = {
       value: "",
-      user: {}
+      user: {},
+      error:""
     }
   }
 
@@ -22,7 +23,7 @@ class PaginaInicial extends Component {
   pesquisarUser = () => {
     if (this.state.value !== "") {
 
-    getUser(this.state.value).then((response) => {
+    getUser(this.state.value).then(response => {
       this.setState({
         user: response.data
       })
@@ -33,15 +34,13 @@ class PaginaInicial extends Component {
         }
       })
     }).catch(error => {
-      console.log(error)
-      return (
+       
         this.props.history.push({
           pathname: "/Result",
           state: {
-            error: 'Not Found'
+            error: 'Not found'
           }
         })
-      )
      });
     }
   };

@@ -1,0 +1,10 @@
+@import url(//db.onlinewebfonts.com/c/440785c689da19fbbdb1346932c8c029?family=Monaco);
+@import url('https://fonts.googleapis.com/css?family=Raleway:200i,300,400&display=swap');
+
+.notfound{
+    display: flex;
+    justify-content: center;
+    font-family: Raleway-Regular;
+    font-size: 40px;
+    color: #ac53f2;
+}

@@ -9,14 +9,14 @@ const Repositories = props => {
     const {repoName, repoDescription, children }  = props
     return (
         <div>            
-                <div className='container_repos'>
+                <div className='c_repos'>
                     <Description
                         user_name= {repoName}
                         user_login= {repoDescription}
                         description_title='repos_title'
                         description_p='repos_p'
                     ></Description>
-                    <div  className='star'>
+                    <div>
                     <IconTitle
                         icon={Star}
                         alt='organization icon'

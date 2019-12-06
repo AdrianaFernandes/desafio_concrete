@@ -7,10 +7,10 @@ import './style.css'
 const NavBar = props => {
     return (
         <Fragment>
-            <main className='container'>
+            <main className='Group'>
                 <Header
-                    classG='Github-Search'
-                    classS='text-Search'
+                    classG='Github-Search_Result'
+                    classS='text-Search_Result'
                     title='Github'
                     search=' Search'
                 />

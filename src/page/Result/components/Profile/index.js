@@ -11,7 +11,7 @@ import Followers from '../../../../assets/img/followers icon.png';
 const Profile = props =>{
     const {url_avatar, user_name, user_login, textOrganization, textLocation, textStar, textRepositories, textFollowers } = props
     return(
-        <div className='container__profile'>
+        <div className='c_profile'>
             <UserImg
             url_avatar={url_avatar}
             />

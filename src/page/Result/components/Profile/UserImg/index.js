@@ -1,12 +1,12 @@
 import React from 'react'
 import './style.css'
 
-function Avatar(props){
-    return(
-        <div className=''>
-            <img src={props.profile}/>
-        </div>
-
+const Avatar = props => {
+    const {url_avatar} = props
+    console.log(props)
+    return (
+        <img src={url_avatar} className='Avatar' alt='usuario github'></img>
     )
 }
+
 export default Avatar

@@ -1,7 +1,7 @@
 import config from './config'
 
 function getUser (nameUser) {
-    const url = '/users/${nameUser}';
+    const url = `/users/${nameUser}`;
     return config.get(url);
 }
 

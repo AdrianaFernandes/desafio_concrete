@@ -3,7 +3,7 @@ import './style.css'
 const IconTitle = (props) => {
     const {icon, alt, children} = props
     return (
-        <div>
+        <div className='c_icon'>
             <img src={icon} alt={alt}></img>
             <p>{children}</p>
         </div>
