@@ -1,15 +1,15 @@
-.Github-Search {
-    margin: 0;
-    text-align: center;
-    font-family: Monaco;
-    font-size: 60px;
-    font-weight: 300;
-    font-stretch: normal;
-    color: #000000;
+.search-logo {
+   font-family: Monaco;
+   font-size: 60px;
 }
-
-.text-Search{
-  font-family: Raleway;
-  font-weight: 50;
-  font-style: italic;
+  
+.search-logo-result {
+   font-family: Monaco;
+   font-size: 40px;
+}
+  
+.search-span {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 100;
+   font-style: italic;
 }

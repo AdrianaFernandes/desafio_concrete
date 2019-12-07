@@ -1,6 +1,6 @@
-.container{
-    margin-top: 245px;
-    background-color: var(--white);
+.navbar_home {
+  text-align: center;
+  margin-top: 244px;
 }
 
 .Github-Search {
@@ -19,3 +19,21 @@ font-weight: 50;
 font-style: italic;
 }
 
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Input {
+    width: 650px;
+    height: 50px;
+    background-color: var(--white);
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 2px;
+  background-color: #ac53f2;
+}

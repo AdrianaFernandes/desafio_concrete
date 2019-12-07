@@ -1,29 +1,29 @@
 import React from 'react'
-import IconTitle from '../Profile/IconTitle'
-import Description from '../Profile/Description'
+import IconTitle from '../../../../componente/IconTitle'
+import Description from '../../../../componente/Description'
 import Star from '../../../../assets/img/star icon.png'
 
 
 
 const Repositories = props => {
-    const {repoName, repoDescription, children }  = props
+    const {repos }  = props
     return (
-        <div>            
+        <div>
+        {repos.sort(function (a, b) {return b.stargazers_count - a.stargazers_count}).map(repo => (
                 <div className='c_repos'>
-                    <Description
-                        user_name= {repoName}
-                        user_login= {repoDescription}
-                        description_title='repos_title'
-                        description_p='repos_p'
+                <Description
+                        title={repo.name}
+                        description={repo.description}
+                        classTitle='repositories-title'
+                        classParagraph='repositories-paragraph'
                     ></Description>
-                    <div>
                     <IconTitle
                         icon={Star}
                         alt='organization icon'
                         classIcon='icon-repositories'
-                    >{children}</IconTitle>
-                    </div>
-                </div>            
+                        >{repo.stargazers_count}</IconTitle>
+                </div>
+            ))}
         </div>
     )
 }

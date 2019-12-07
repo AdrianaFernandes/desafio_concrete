@@ -1,57 +1,62 @@
 import React from 'react'
-import Description from './Description';
-import IconTitle from './IconTitle';
-import UserImg from './UserImg';
-import Star from '../../../../assets/img/star icon.png';
+import Description from '../../../../componente/Description';
+import IconTitle from '../../../../componente/IconTitle';
+import UserImg from '../../../../componente/UserImg/UserImg';
 import Organization from '../../../../assets/img/organization icon.png';
 import Location from '../../../../assets/img/location icon.png';
 import Repositories from '../../../../assets/img/repositorie icon.png';
 import Followers from '../../../../assets/img/followers icon.png';
 
-const Profile = props =>{
-    const {url_avatar, user_name, user_login, textOrganization, textLocation, textStar, textRepositories, textFollowers } = props
-    return(
-        <div className='c_profile'>
+const Profile = props => {
+    const { avatar_url, name, bio, company, location, public_repos, followers, following } = props
+    return (
+        <div>
             <UserImg
-            url_avatar={url_avatar}
+                avatar_url={avatar_url}
             />
             <Description
-            description_title='user__name'
-            description_P= 'user__login'
-            user_name= {user_name}
-            user_login={user_login}
+                title={name}
+                description={bio}
+                classTitle='profile-title'
+                classParagraph='profile-paragraph'
             />
-            <IconTitle
-            icon={Organization}
-            alt= 'organization icon'
-            class_icon='icon'
-            children= {textOrganization}
-            />
-            <IconTitle
-            icon={Location}
-            alt= 'location icon'
-            class_icon='icon'
-            children= {textLocation}
-            />
-            <IconTitle
-            icon={Star}
-            alt= 'star icon'
-            class_icon='icon'
-            children= {textStar}
-            />
-            <IconTitle
-            icon={Repositories}
-            alt= 'repositories icon'
-            class_icon='icon'
-            children= {textRepositories}
-            />
-            <IconTitle
-            icon={Followers}
-            alt= 'followers icon'
-            class_icon='icon'
-            children= {textFollowers}
-            />
-            
+            <div className='icon-box'>
+                {company ?
+                    <IconTitle
+                        icon={Organization}
+                        alt='organization icon'
+                        class_icon='icon'
+                    >{company}</IconTitle> :
+                    null}
+                {location ?
+                    <IconTitle
+                        icon={Location}
+                        alt='location icon'
+                        class_icon='icon'
+                    >{Location}</IconTitle> :
+                    null}
+                {public_repos ?
+                    <IconTitle
+                        icon={Repositories}
+                        alt='repositories icon'
+                        class_icon='icon'
+                    >{public_repos}</IconTitle> :
+                    null}
+                {followers ?
+                    <IconTitle
+                        icon={Followers}
+                        alt='followers icon'
+                        class_icon='icon'
+                    >{followers}</IconTitle> :
+                    null}
+                {following ?
+                    <IconTitle
+                        icon={Followers}
+                        alt='followers icon'
+                        class_icon='icon'
+                    >{followers}</IconTitle> :
+                    null}
+            </div>
         </div>
     )
 }

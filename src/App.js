@@ -1,22 +1,22 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css'
 
 import PaginaInicial from './page/Home/index'
-import Resultado from './page/Result/index'
+import Result from './page/Result/index'
 
 
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
+    <Fragment>
+      <Router>
           <Switch>
             <Route exact path='/' component={PaginaInicial} />
-            <Route path='/Result' component={Resultado} />
+            <Route path='/Result' component={Result} />
           </Switch>
-      </BrowserRouter>
-    </div>
+      </Router>
+      </Fragment>
   );
 }
 
