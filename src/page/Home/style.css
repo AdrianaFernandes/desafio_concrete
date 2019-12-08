@@ -1,0 +1,39 @@
+.navbar_home {
+  text-align: center;
+  margin-top: 244px;
+}
+
+.Github-Search {
+  margin: 0;
+  text-align: center;
+  font-family: Monaco;
+  font-size: 60px;
+  font-weight: 300;
+  font-stretch: normal;
+  color: #000000;
+}
+
+.text-Search{
+font-family: Raleway;
+font-weight: 50;
+font-style: italic;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Input {
+    width: 650px;
+    height: 50px;
+    background-color: var(--white);
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 2px;
+  background-color: #ac53f2;
+}
